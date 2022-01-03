@@ -1,0 +1,17 @@
+<h2>Clipboard Hijacking Proof of Concept</h2>
+<p>This page will demonstrate how an attacker can leverage the Clipboard.Data call to replace the text you copied with a string of their choice.</p>
+<br>
+<p>Credits go to Gabriel Friedlander for the attack vector and reminding us how developer tools can be misued. These sort of attacks wouldn't be picked up by security rules or software</p>
+<strong>Cryptowallets</strong><br><br>
+<p>Attackers can replace a cryptocurrency addresses that you copy with their own wallet adddress. Copy and paste the address you see into any other text field on your machine. Did the addresses match? <br><br>
+<p><strong><span id="copy" style="background-color: #f8f8f8;"><code>bc1qzgz0h8h5nuqgc9t3a6jhk8uxxve0lckxchw2vw</code></span></strong></p>
+<br>
+This is why you should always double check the address you are sending to. It is not enough just to check the first few characters, you should check the first 6 and the last 6 at the bare minimum.</p>
+<strong>Web browsers</strong><br><BR>
+<p>Attackers could also get you to visit a phishing site, you would think your safe copying a link but consider if you would notice the difference between lol.com and IoI.com - they look the same on your screen but if you copy and paste them they take you to different sites. Some users will rely on "Paste and Go" which means they may not even realise what they've connected to until it's too late.</p>
+<strong>Command line</strong><br><br>
+Suppose your a programmer, you're copying and pasting code from StackOverflow. What happens if someone gets you to execute a malicious command? Credits to Gabriel Friedlander @ Wizer Training who demonstrated how you can use the new line character to auto execute commands in Terminal.
+<br>
+<script>
+document.getElementById('copy').addEventListener('copy', function(e) { e.clipboardData.setData('text/plain', 'bc1qzNOT_THE_ADDRESS_YOU_COPIED'); e.preventDefault(); });
+ </script>
