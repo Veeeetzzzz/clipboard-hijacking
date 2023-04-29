@@ -16,7 +16,7 @@ This is why you should always double check the address you are sending to. It is
 
 Attackers could also get you to visit a phishing site, you would think your safe copying a link but consider if you would notice the difference between lol.com and IoI.com - they look the same on your screen but if you copy and paste them they take you to different sites. Some users will rely on "Paste and Go" which means they may not even realise what they've connected to until it's too late.
 
-![Image showing the difference between I or L](https://raw.githubusercontent.com/Veeeetzzzz/clipboard-hijacking/main/I%20or%20i.PNG)
+![image](https://user-images.githubusercontent.com/40268197/235326190-dd784676-9c86-4633-b448-353e4d4e4002.png)
 
 ## Command line
 
