@@ -6,7 +6,7 @@ These sort of attacks wouldn't be picked up by security rules or software.
 
 ## Cryptowallets
 
-PoC at - https://veeeetzzzz.github.io/clipboard-hijacking/
+PoC at - https://veeeetzzzz.github.io/clipboard-hijacking/ as this requires JS
 
 Attackers can replace a cryptocurrency addresses that you copy with their own wallet adddress. Copy and paste the address you see into any other text field on your machine. Did the addresses match?
 
